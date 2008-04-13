@@ -1,0 +1,23 @@
+---
+name: POE-Component-IRC-Plugin-SigFail
+version: 0.001
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: make witty error/no result messages
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Carp: 1.04
+  Devel::TakeHashArgs: 0.005
+  POE::Component::IRC::Plugin: 0.1
+build_requires:
+  Test::More: 0
+provides:
+  POE::Component::IRC::Plugin::SigFail:
+    file: lib/POE/Component/IRC/Plugin/SigFail.pm
+    version: 0.001
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
