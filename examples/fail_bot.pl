@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use lib '../lib';
+use lib qw(../lib  lib);
 use POE qw(Component::IRC  Component::IRC::Plugin::SigFail);
 
 my $irc = POE::Component::IRC->spawn(
@@ -46,7 +46,7 @@ sub irc_001 {
      my ($event, $args) = @_[ARG0 .. $#_];
      my @output = ( "$event: " );
 
-     for my $arg (@$args) {
+     for my $arg (grep defined, @$args) {
          if ( ref $arg eq 'ARRAY' ) {
              push( @output, '[' . join(' ,', @$arg ) . ']' );
          }

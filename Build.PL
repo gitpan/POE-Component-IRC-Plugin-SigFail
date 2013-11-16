@@ -14,7 +14,9 @@ my $builder = Module::Build->new(
         'Carp'                        => 1.04,
         'Devel::TakeHashArgs'         => 0.005,
         'POE::Component::IRC::Plugin' => 0.10,
+        'perl' => '5.006', 
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-SigFail-*' ],
     create_makefile_pl => 'traditional',
 );

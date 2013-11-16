@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::SigFail;
 use warnings;
 use strict;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Carp;
 use Devel::TakeHashArgs;
@@ -102,6 +102,8 @@ sub __make_sigfail_messages {
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

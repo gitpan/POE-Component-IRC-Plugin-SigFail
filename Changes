@@ -1,5 +1,8 @@
 Revision history for POE-Component-IRC-Plugin-SigFail
 
-0.001   Apr 12, 2008
-        First version, released on an unsuspecting world.
+0.002   2013-11-16
+        - Minor fixes to comply with specs and Kwalitee game
+
+0.001   2008-03-12
+        - First version, released on an unsuspecting world.
 
